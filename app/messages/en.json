@@ -1,0 +1,20 @@
+{
+  "Hero": {
+    "badge": "Junior Full-Stack Developer",
+    "title_part1": "Turning Ideas Into",
+    "title_highlight": "Working Web Apps",
+    "subtitle": "Backend-focused developer with hands-on experience building RESTful APIs with Laravel and interactive UIs with React. I'm early in my career, but I write structured code, ship working products, and learn fast.",
+    "cta_primary": "View My Projects",
+    "cta_secondary": "Download Cv"
+  },
+
+  "Navbar": {
+    "navItems": [
+    { "label": "About", "id": "about" },
+    { "label": "Tech Stack", "id": "tech" },
+    { "label": "Projects", "id": "projects" },
+    { "label": "Experience", "id": "experience" },
+    { "label": "Contact", "id": "contact" }
+  ]
+  }
+}

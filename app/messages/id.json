@@ -1,0 +1,19 @@
+{
+  "Hero": {
+    "badge": "Junior Full-Stack Developer",
+    "title_part1": "Mengubah Ide Menjadi",
+    "title_highlight": "Aplikasi Web yang Nyata",
+    "subtitle": "Developer backend dengan pengalaman nyata membangun RESTful API menggunakan Laravel dan antarmuka interaktif dengan React. Masih awal karir, tapi saya menulis kode yang terstruktur, menghasilkan produk yang berjalan, dan terus belajar cepat.",
+    "cta_primary": "Lihat Proyek Saya",
+    "cta_secondary": "Unduh Cv"
+  },
+   "Navbar": {
+    "navItems": [
+      { "label": "Tentang", "id": "about" },
+      { "label": "Tech Stack", "id": "tech" },
+      { "label": "Proyek", "id": "projects" },
+      { "label": "Pengalaman", "id": "experience" },
+      { "label": "Hubungi Saya", "id": "contact" }
+  ]
+  }
+}
