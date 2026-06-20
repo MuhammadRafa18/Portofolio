@@ -4,16 +4,239 @@
     "title_part1": "Mengubah Ide Menjadi",
     "title_highlight": "Aplikasi Web yang Nyata",
     "subtitle": "Developer backend dengan pengalaman nyata membangun RESTful API menggunakan Laravel dan antarmuka interaktif dengan React. Masih awal karir, tapi saya menulis kode yang terstruktur, menghasilkan produk yang berjalan, dan terus belajar cepat.",
-    "cta_primary": "Lihat Proyek Saya",
-    "cta_secondary": "Unduh Cv"
+    "cta_primary": "Lihat Proyek Saya"
   },
-   "Navbar": {
+  "Navbar": {
     "navItems": [
-      { "label": "Tentang", "id": "about" },
-      { "label": "Tech Stack", "id": "tech" },
-      { "label": "Proyek", "id": "projects" },
-      { "label": "Pengalaman", "id": "experience" },
-      { "label": "Hubungi Saya", "id": "contact" }
-  ]
+      {
+        "label": "Tentang",
+        "id": "about"
+      },
+      {
+        "label": "Tech Stack",
+        "id": "tech"
+      },
+      {
+        "label": "Proyek",
+        "id": "projects"
+      },
+      {
+        "label": "Pengalaman",
+        "id": "experience"
+      },
+      {
+        "label": "Hubungi Saya",
+        "id": "contact"
+      }
+    ]
+  },
+  "data": {
+    "project_headline": "Katalog Portfolio",
+    "project_title": "Proyek Pilihan Berbasis",
+    "project_subtitle": " Performa Ekstrem",
+    "skills_headline": "Keahlian & Core Engine",
+    "skills_title": "Teknologi Yang Saya ",
+    "skills_subtitle": "Gunakan & Kuasai",
+    "experience_headline": "Riwayat Karir",
+    "experience_title_normal": "Pengalaman",
+    "experience_title_gradient": "Kerja & Kontribusi",
+    "experience_subtitle": "Membantu skalabilitas startup teknologi dengan menyusun sistem yang solid, performant, dan adaptif terhadap perkembangan bisnis.",
+    "skills": [
+      {
+        "name": "TypeScript & JavaScript",
+        "category": "Languages",
+        "level": 80,
+        "color": "text-blue-400 group-hover:border-blue-500/50",
+        "iconName": "Code",
+        "description": "Arsitektur typing, custom generics, decorator patterns, dan konfigurasi compiler."
+      },
+      {
+        "name": "Ruby on Rails",
+        "category": "Languages",
+        "level": 60,
+        "color": "text-red-400 group-hover:border-red-500/50",
+        "iconName": "Layers",
+        "description": "Arsitektur MVC, ActiveRecord ORM, RESTful routing, dan server-side rendering dengan ERB templates."
+      },
+      {
+        "name": "React & Next.js",
+        "category": "Frontend",
+        "level": 80,
+        "color": "text-cyan-500 group-hover:border-cyan-500/50",
+        "iconName": "Cpu",
+        "description": "Server actions, React Server Components (RSC), optimasi hydration stream, dan custom hooks."
+      },
+      {
+        "name": "Tailwind CSS & Framer Motion",
+        "category": "Frontend",
+        "level": 85,
+        "color": "text-pink-400 group-hover:border-pink-500/50",
+        "iconName": "Sparkles",
+        "description": "Desain fluid kompleks, migrasi layout-id, animasi berbasis fisika, dan custom utility plugins."
+      },
+      {
+        "name": "PostgreSQL",
+        "category": "Backend",
+        "level": 65,
+        "color": "text-blue-500 group-hover:border-blue-500/50",
+        "iconName": "Database",
+        "description": "Sedang dipelajari — mengeksplorasi query lanjutan dan optimasi index untuk aplikasi yang skalabel."
+      },
+      {
+        "name": "MySQL",
+        "category": "Backend",
+        "level": 80,
+        "color": "text-orange-400 group-hover:border-orange-500/50",
+        "iconName": "Database",
+        "description": "Perancangan database relasional, migrasi data, dan manajemen transaksi terintegrasi API."
+      },
+      {
+        "name": "PHP & Laravel",
+        "category": "Backend",
+        "level": 85,
+        "color": "text-violet-400 group-hover:border-violet-500/50",
+        "iconName": "Code2",
+        "description": "Pengembangan RESTful API, middleware, autentikasi, role-based access control, dan deployment ke Hostinger."
+      }
+    ],
+    "projects": [
+      {
+        "id": "1",
+        "title": "E-Commerce Frontend",
+        "description": "Antarmuka e-commerce berbasis React yang terintegrasi dengan backend API untuk pengalaman belanja yang responsif.",
+        "longDescription": "Mengembangkan frontend e-commerce menggunakan React.js dengan fitur product listing, pencarian, cart, dan checkout. Mengintegrasikan autentikasi pengguna dan data transaksi dari RESTful API backend secara real-time.",
+        "achievements": [
+          "Mengimplementasikan fitur product listing, pencarian, cart, dan checkout.",
+          "Mengintegrasikan autentikasi pengguna dari RESTful API backend.",
+          "Menghubungkan data transaksi secara real-time ke seluruh tampilan frontend.",
+          "Membangun UI responsif menggunakan Tailwind CSS di semua ukuran layar."
+        ],
+        "tags": [
+          "React.js",
+          "Tailwind CSS",
+          "RESTful API"
+        ],
+        "category": "Frontend",
+        "glowColor": "cyan",
+        "stars": 0,
+        "forks": 0,
+        "liveUrl": "",
+        "githubUrl": "https://github.com/MuhammadRafa18//E-commerc",
+        "metrics": {
+          "label": "Stack",
+          "value": "React + API"
+        }
+      },
+      {
+        "id": "2",
+        "title": "Company Profile Backend API",
+        "description": "RESTful API untuk pengelolaan konten dinamis website company profile dengan sistem autentikasi berbasis role.",
+        "longDescription": "Membangun RESTful API menggunakan Laravel 12 untuk mendukung website company profile dengan admin panel. Merancang struktur database relasional, menerapkan autentikasi, role-based access control, serta memastikan integrasi penuh dengan tim frontend.",
+        "achievements": [
+          "Merancang struktur database relasional untuk modul konten dinamis.",
+          "Menerapkan role-based access control menggunakan middleware Laravel.",
+          "Membangun dan menguji endpoint API untuk integrasi penuh dengan frontend.",
+          "Mengembangkan dukungan admin panel dengan manajemen konten terstruktur."
+        ],
+        "tags": [
+          "Laravel 12",
+          "PHP",
+          "MySQL",
+          "RESTful API"
+        ],
+        "category": "Backend",
+        "glowColor": "purple",
+        "stars": 0,
+        "forks": 0,
+        "liveUrl": "",
+        "metrics": {
+          "label": "Auth",
+          "value": "RBAC + Middleware"
+        }
+      },
+      {
+        "id": "3",
+        "title": "E-Commerce Backend API",
+        "description": "RESTful API sistem e-commerce dengan alur transaksi lengkap — dari manajemen produk hingga integrasi pembayaran.",
+        "longDescription": "Mengembangkan backend e-commerce menggunakan Laravel dengan database relasional untuk produk, pengguna, dan transaksi. Mengelola validasi data, autentikasi pengguna, pengelolaan order, dan integrasi pembayaran melalui API.",
+        "achievements": [
+          "Merancang database relasional untuk produk, pengguna, dan transaksi.",
+          "Mengimplementasikan alur manajemen order dari cart hingga konfirmasi.",
+          "Mengintegrasikan payment gateway melalui endpoint API yang terstruktur.",
+          "Menangani validasi data dan error handling di seluruh modul."
+        ],
+        "tags": [
+          "Laravel",
+          "PHP",
+          "MySQL"
+        ],
+        "category": "Backend",
+        "glowColor": "blue",
+        "stars": 0,
+        "forks": 0,
+        "liveUrl": "",
+        "githubUrl": "https://github.com/MuhammadRafa18/Be_E-commerc",
+        "metrics": {
+          "label": "Module",
+          "value": "Order + Payment"
+        }
+      },
+      {
+        "id": "4",
+        "title": "Student Attendance System",
+        "description": "Sistem presensi berbasis web dengan manajemen role pengguna dan monitoring kehadiran secara terpusat.",
+        "longDescription": "Membangun sistem presensi sekolah menggunakan Laravel dengan autentikasi multi-role (admin, guru, siswa). Merancang database untuk pencatatan kehadiran dan membangun fitur input serta monitoring data kehadiran secara real-time.",
+        "achievements": [
+          "Membangun autentikasi multi-role untuk admin, guru, dan siswa.",
+          "Merancang skema database untuk pencatatan data kehadiran yang terstruktur.",
+          "Mengembangkan fitur input dan monitoring kehadiran secara real-time.",
+          "Menerapkan akses berbasis role untuk membatasi data per jenis pengguna."
+        ],
+        "tags": [
+          "Laravel",
+          "MySQL",
+          "Bootstrap",
+          "HTML",
+          "CSS"
+        ],
+        "category": "Full-Stack",
+        "glowColor": "pink",
+        "stars": 0,
+        "forks": 0,
+        "liveUrl": "",
+        "githubUrl": "https://github.com/MuhammadRafa18/Presensi-app",
+        "metrics": {
+          "label": "Role",
+          "value": "Multi-role Auth"
+        }
+      },
+      {
+        "id": "5",
+        "title": "Admin Dashboard E-Commerce",
+        "description": "Dashboard admin terpusat untuk pengelolaan produk, pengguna, dan pesanan dengan integrasi API real-time.",
+        "longDescription": "Mengembangkan dashboard admin menggunakan React.js dengan Tailwind CSS. Mengintegrasikan API backend untuk operasi CRUD produk, manajemen pengguna, dan monitoring transaksi secara real-time dalam satu sistem terpusat.",
+        "achievements": [
+          "Membangun antarmuka CRUD terpusat untuk produk, pengguna, dan pesanan.",
+          "Mengintegrasikan backend API untuk pembaruan data real-time di semua tampilan.",
+          "Mengelola state global dan alur data untuk kebutuhan operasional admin.",
+          "Mendesain tampilan dashboard yang bersih menggunakan sistem komponen Tailwind CSS."
+        ],
+        "tags": [
+          "React.js",
+          "Tailwind CSS",
+          "RESTful API"
+        ],
+        "category": "Frontend",
+        "glowColor": "cyan",
+        "stars": 0,
+        "forks": 0,
+        "liveUrl": "",
+        "githubUrl": "https://github.com/MuhammadRafa18/Admin_E-commerc",
+        "metrics": {
+          "label": "View",
+          "value": "Real-time CRUD"
+        }
+      }
+    ]
   }
 }

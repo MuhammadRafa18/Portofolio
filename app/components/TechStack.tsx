@@ -1,18 +1,21 @@
 "use client";
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
-import { SKILLS } from '../data';
-import { Skill } from '../types';
-import * as Icons from 'lucide-react';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "motion/react";
+import { Skill } from "../types";
+import * as Icons from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function TechStack() {
-  const [selectedCategory, setSelectedCategory] = useState<string>('Semua');
+  const t = useTranslations("data");
+  const skills = t.raw("skills") as Skill[];
+  const [selectedCategory, setSelectedCategory] = useState<string>("All");
 
-  const categories = ['Semua', 'Languages', 'Frontend', 'Backend', 'DevOps & Tools'];
+  const categories = ["All", "Languages", "Frontend", "Backend"];
 
-  const filteredSkills = selectedCategory === 'Semua'
-    ? SKILLS
-    : SKILLS.filter(skill => skill.category === selectedCategory);
+  const filteredSkills =
+    selectedCategory === "All"
+      ? skills
+      : skills.filter((skill) => skill.category === selectedCategory);
 
   // Helper dynamically fetches icon from Lucide-react
   const renderIcon = (iconName: string) => {
@@ -24,8 +27,8 @@ export default function TechStack() {
   };
 
   return (
-    <section 
-      id="tech" 
+    <section
+      id="tech"
       className="py-24 px-4 md:px-8 max-w-7xl mx-auto relative overflow-hidden"
     >
       {/* Background glow orb */}
@@ -37,35 +40,36 @@ export default function TechStack() {
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-100px' }}
+          viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
           className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full glass border border-white/5 text-xs font-semibold text-accent-cyan tracking-wider uppercase mb-3"
         >
           <Icons.Cpu className="w-3.5 h-3.5" />
-          <span>Keahlian & Core Engine</span>
+          <span>{t('skills_headline')}</span>
         </motion.div>
 
         <motion.h2
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-100px' }}
+          viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5, delay: 0.1 }}
           className="font-display font-black text-3xl sm:text-4xl md:text-5xl tracking-tight text-white mb-4"
         >
-          Teknologi Yang Saya{' '}
+          {t('skills_title')}{" "}
           <span className="bg-gradient-to-r from-accent-purple via-accent-pink to-accent-blue bg-clip-text text-transparent">
-            Gunakan & Kuasai
+           {t('skills_subtitle')}
           </span>
         </motion.h2>
 
         <motion.p
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-100px' }}
+          viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-slate-400 max-w-2xl text-sm sm:text-base"
         >
-          Menggunakan toolkit modern yang berorientasi pada kecepatan, skalabilitas ekstrem, dan kepatuhan terhadap clean code practices.
+          Menggunakan toolkit modern yang berorientasi pada kecepatan,
+          skalabilitas ekstrem, dan kepatuhan terhadap clean code practices.
         </motion.p>
       </div>
 
@@ -82,16 +86,16 @@ export default function TechStack() {
               transition={{ delay: idx * 0.05 }}
               onClick={() => setSelectedCategory(cat)}
               className={`relative px-4 py-2 rounded-full font-display text-xs font-semibold tracking-wide transition-all cursor-pointer ${
-                isSelected 
-                  ? 'text-white' 
-                  : 'text-slate-400 hover:text-slate-200 glass border border-white/5'
+                isSelected
+                  ? "text-white"
+                  : "text-slate-400 hover:text-slate-200 glass border border-white/5"
               }`}
             >
               {isSelected && (
                 <motion.div
                   layoutId="activeCategoryIndicator"
                   className="absolute inset-0 bg-gradient-to-r from-accent-purple to-accent-blue rounded-full -z-10 shadow-[0_3px_15px_rgba(168,85,247,0.4)]"
-                  transition={{ type: 'spring', stiffness: 350, damping: 28 }}
+                  transition={{ type: "spring", stiffness: 350, damping: 28 }}
                 />
               )}
               {cat}
@@ -101,7 +105,7 @@ export default function TechStack() {
       </div>
 
       {/* Interactive Staggered Grid Content */}
-      <motion.div 
+      <motion.div
         layout
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
       >
@@ -123,7 +127,9 @@ export default function TechStack() {
               <div>
                 {/* Header card node details */}
                 <div className="flex items-center justify-between mb-4">
-                  <div className={`p-2.5 rounded-lg bg-white/2 border border-white/5 ${skill.color}`}>
+                  <div
+                    className={`p-2.5 rounded-lg bg-white/2 border border-white/5 ${skill.color}`}
+                  >
                     {renderIcon(skill.iconName)}
                   </div>
                   {/* Skill level node circle indicator */}
@@ -137,7 +143,7 @@ export default function TechStack() {
                   {skill.name}
                 </h3>
 
-                <p className="text-xs text-slate-400 leading-relaxed font-normal mb-5">
+                <p className="text-xs text-slate-300 leading-relaxed font-normal mb-5">
                   {skill.description}
                 </p>
               </div>
@@ -148,12 +154,12 @@ export default function TechStack() {
                   <span>CAPABILITY RATIO</span>
                   <span className="text-slate-400">{skill.level}%</span>
                 </div>
-                <div className="h-1 w-full bg-white/5 rounded-full overflow-hidden">
-                  <motion.div 
+                <div className="h-0.5 w-full bg-white/5 rounded-full overflow-hidden">
+                  <motion.div
                     initial={{ width: 0 }}
                     whileInView={{ width: `${skill.level}%` }}
                     viewport={{ once: true }}
-                    transition={{ duration: 1.2, ease: 'easeOut' }}
+                    transition={{ duration: 1.2, ease: "easeOut" }}
                     className="h-full rounded-full bg-gradient-to-r from-accent-blue via-accent-cyan to-accent-purple"
                   />
                 </div>

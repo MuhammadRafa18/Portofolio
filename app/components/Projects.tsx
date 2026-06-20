@@ -1,28 +1,26 @@
 "use client";
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { PROJECTS } from '../data';
 import { Project } from '../types';
 import { 
   Github, 
   ExternalLink, 
   Rocket, 
-  Layers, 
-  Star, 
-  GitFork, 
   X, 
-  Sparkles, 
   CheckCircle,
   Code
 } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 export default function Projects() {
+  const t = useTranslations("data");
+  const PROJECTS = t.raw("projects") as Project[];
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
-  const [selectedCategory, setSelectedCategory] = useState<string>('Semua');
+  const [selectedCategory, setSelectedCategory] = useState<string>('All');
 
-  const categories = ['Semua', 'Full-Stack', 'Frontend', 'Backend'];
+  const categories = ['All', 'Full-Stack', 'Frontend', 'Backend'];
 
-  const filteredProjects = selectedCategory === 'Semua'
+  const filteredProjects = selectedCategory === 'All'
     ? PROJECTS
     : PROJECTS.filter(p => p.category === selectedCategory);
 
@@ -70,7 +68,7 @@ export default function Projects() {
             className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full glass border border-white/5 text-xs font-semibold text-accent-purple tracking-wider uppercase mb-3"
           >
             <Rocket className="w-3.5 h-3.5" />
-            <span>Katalog Portfolio</span>
+            <span>{t('project_headline')}</span>
           </motion.div>
 
           <motion.h2
@@ -80,9 +78,9 @@ export default function Projects() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="font-display font-black text-3xl sm:text-4xl md:text-5xl tracking-tight text-white"
           >
-            Proyek Pilihan Berbasis <br />
+            {t('project_title')} <br />
             <span className="bg-gradient-to-r from-accent-blue via-accent-cyan to-accent-purple bg-clip-text text-transparent">
-              Performa Ekstrem
+              {t('project_subtitle')}
             </span>
           </motion.h2>
         </div>
@@ -263,12 +261,7 @@ export default function Projects() {
                   Arsitektur & Fitur Utama
                 </h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                  {[
-                    'Optimasi muatan basis data dengan connection pooling.',
-                    'Didesain ramah skema cloud-native serverless.',
-                    'Glow dynamic monitoring dan pipeline logging terpadu.',
-                    'Coverage testing unit logic melampaui 92%.',
-                  ].map((feat) => (
+                  {selectedProject.achievements.map((feat) => (
                     <div key={feat} className="flex gap-2 items-start text-xs text-slate-400">
                       <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                       <span>{feat}</span>
@@ -296,18 +289,7 @@ export default function Projects() {
 
               {/* Project footer control buttons */}
               <div className="flex items-center justify-between pt-5 border-t border-white/5">
-                <div className="flex items-center gap-4 text-xs text-slate-400">
-                  <div className="flex items-center gap-1">
-                    <Star className="w-4.5 h-4.5 text-amber-400 fill-amber-400" />
-                    <span className="text-white font-semibold">{selectedProject.stars || 420}</span>
-                    <span>Stars</span>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <GitFork className="w-4.5 h-4.5 text-slate-400" />
-                    <span className="text-white font-semibold">{selectedProject.forks || 34}</span>
-                    <span>Forks</span>
-                  </div>
-                </div>
+                
 
                 <div className="flex items-center gap-3">
                   {selectedProject.githubUrl && (

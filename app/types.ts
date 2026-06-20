@@ -6,6 +6,7 @@ export interface Project {
   tags: string[];
   category: 'Frontend' | 'Backend' | 'Full-Stack' | 'Web3';
   glowColor: 'blue' | 'purple' | 'cyan' | 'pink';
+  achievements: [];
   stars?: number;
   forks?: number;
   liveUrl?: string;
@@ -16,9 +17,9 @@ export interface Project {
 export interface Skill {
   name: string;
   category: 'Languages' | 'Frontend' | 'Backend' | 'DevOps & Tools';
-  level: number; // 0-100
-  color: string; // Tailwind glow border color or gradient text
-  iconName: string; // Map to Lucide icon component dynamically
+  level: number; 
+  color: string; 
+  iconName: string; 
   description: string;
 }
 
@@ -32,10 +33,4 @@ export interface WorkExperience {
   glowAccent: string;
 }
 
-export interface BentoItem {
-  id: string;
-  title: string;
-  subtitle?: string;
-  type: 'terminal' | 'stats' | 'timezone' | 'interactive' | 'bio';
-  size: 'small' | 'medium' | 'large' | 'full';
-}
+

@@ -4,17 +4,239 @@
     "title_part1": "Turning Ideas Into",
     "title_highlight": "Working Web Apps",
     "subtitle": "Backend-focused developer with hands-on experience building RESTful APIs with Laravel and interactive UIs with React. I'm early in my career, but I write structured code, ship working products, and learn fast.",
-    "cta_primary": "View My Projects",
-    "cta_secondary": "Download Cv"
+    "cta_primary": "View My Projects"
   },
-
   "Navbar": {
     "navItems": [
-    { "label": "About", "id": "about" },
-    { "label": "Tech Stack", "id": "tech" },
-    { "label": "Projects", "id": "projects" },
-    { "label": "Experience", "id": "experience" },
-    { "label": "Contact", "id": "contact" }
-  ]
+      {
+        "label": "About",
+        "id": "about"
+      },
+      {
+        "label": "Tech Stack",
+        "id": "tech"
+      },
+      {
+        "label": "Projects",
+        "id": "projects"
+      },
+      {
+        "label": "Experience",
+        "id": "experience"
+      },
+      {
+        "label": "Contact",
+        "id": "contact"
+      }
+    ]
+  },
+  "data": {
+    "project_headline": "Catalog Portfolio",
+    "project_title": "Project-Based Learning",
+    "project_subtitle": "Extreme Performance",
+    "skills_headline": "Expertise & Core Engine",
+    "skills_title": "The Technology I",
+    "skills_subtitle": "Use & Master",
+    "experience_headline": "Track Record",
+    "experience_title_normal": "Career",
+    "experience_title_gradient": "Journey & Contributions",
+    "experience_subtitle": "Real-world experience in developing web systems, managing databases, and delivering impactful digital solutions.",
+    "skills": [
+      {
+        "name": "TypeScript & JavaScript",
+        "category": "Languages",
+        "level": 80,
+        "color": "text-blue-400 group-hover:border-blue-500/50",
+        "iconName": "Code",
+        "description": "Typing architectures, custom generics, decorator patterns, and compiler tuning."
+      },
+      {
+        "name": "Ruby on Rails",
+        "category": "Languages",
+        "level": 60,
+        "color": "text-red-400 group-hover:border-red-500/50",
+        "iconName": "Layers",
+        "description": "MVC architecture, ActiveRecord ORM, RESTful routing, and server-side rendering with ERB templates."
+      },
+      {
+        "name": "React & Next.js",
+        "category": "Frontend",
+        "level": 80,
+        "color": "text-cyan-500 group-hover:border-cyan-500/50",
+        "iconName": "Cpu",
+        "description": "Server actions, React Server Components (RSC), hydration stream optimizations, and custom hooks."
+      },
+      {
+        "name": "Tailwind CSS & Framer Motion",
+        "category": "Frontend",
+        "level": 85,
+        "color": "text-pink-400 group-hover:border-pink-500/50",
+        "iconName": "Sparkles",
+        "description": "Complex fluid designs, layout-id migrations, physics animations, and custom utility plugins."
+      },
+      {
+        "name": "PostgreSQL",
+        "category": "Backend",
+        "level": 65,
+        "color": "text-blue-500 group-hover:border-blue-500/50",
+        "iconName": "Database",
+        "description": "Currently learning — exploring advanced queries and index optimization for scalable apps."
+      },
+      {
+        "name": "MySQL",
+        "category": "Backend",
+        "level": 80,
+        "color": "text-orange-400 group-hover:border-orange-500/50",
+        "iconName": "Database",
+        "description": "Relational database design, data migrations, and API-integrated transaction management."
+      },
+      {
+        "name": "PHP & Laravel",
+        "category": "Backend",
+        "level": 85,
+        "color": "text-violet-400 group-hover:border-violet-500/50",
+        "iconName": "Code2",
+        "description": "RESTful API development, middleware, authentication, role-based access control, and Hostinger deployment."
+      }
+    ],
+    "projects": [
+      {
+        "id": "1",
+        "title": "E-Commerce Frontend",
+        "description": "React-based e-commerce interface integrated with a backend API for a responsive shopping experience.",
+        "longDescription": "Built a React.js e-commerce frontend featuring product listing, search, cart, and checkout flows. Integrated user authentication and transaction data from a RESTful API backend in real-time.",
+        "achievements": [
+          "Implemented product listing, search, cart, and checkout flows.",
+          "Integrated user authentication from RESTful API backend.",
+          "Connected real-time transaction data across all frontend views.",
+          "Built responsive UI using Tailwind CSS across all screen sizes."
+        ],
+        "tags": [
+          "React.js",
+          "Tailwind CSS",
+          "RESTful API"
+        ],
+        "category": "Frontend",
+        "glowColor": "cyan",
+        "stars": 0,
+        "forks": 0,
+        "liveUrl": "",
+        "githubUrl": "https://github.com/MuhammadRafa18//E-commerc",
+        "metrics": {
+          "label": "Stack",
+          "value": "React + API"
+        }
+      },
+      {
+        "id": "2",
+        "title": "Company Profile Backend API",
+        "description": "RESTful API for dynamic content management of a company profile website with role-based authentication.",
+        "longDescription": "Developed a RESTful API using Laravel 12 to support a company profile website with an admin panel. Designed a relational database structure, implemented authentication and role-based access control, and ensured full integration with the frontend team.",
+        "achievements": [
+          "Designed relational database structure for dynamic content modules.",
+          "Implemented role-based access control using Laravel middleware.",
+          "Built and tested API endpoints for full frontend integration.",
+          "Developed admin panel support with structured content management."
+        ],
+        "tags": [
+          "Laravel 12",
+          "PHP",
+          "MySQL",
+          "RESTful API"
+        ],
+        "category": "Backend",
+        "glowColor": "purple",
+        "stars": 0,
+        "forks": 0,
+        "liveUrl": "",
+        "metrics": {
+          "label": "Auth",
+          "value": "RBAC + Middleware"
+        }
+      },
+      {
+        "id": "3",
+        "title": "E-Commerce Backend API",
+        "description": "Full-cycle e-commerce RESTful API covering product management, user auth, and payment integration.",
+        "longDescription": "Built an e-commerce backend using Laravel with a relational database for products, users, and transactions. Handled data validation, user authentication, order management, and payment integration through API endpoints.",
+        "achievements": [
+          "Designed relational database for products, users, and transactions.",
+          "Implemented order management flow from cart to confirmation.",
+          "Integrated payment gateway through structured API endpoints.",
+          "Handled data validation and error handling across all modules."
+        ],
+        "tags": [
+          "Laravel",
+          "PHP",
+          "MySQL"
+        ],
+        "category": "Backend",
+        "glowColor": "blue",
+        "stars": 0,
+        "forks": 0,
+        "liveUrl": "",
+        "githubUrl": "https://github.com/MuhammadRafa18/Be_E-commerc",
+        "metrics": {
+          "label": "Module",
+          "value": "Order + Payment"
+        }
+      },
+      {
+        "id": "4",
+        "title": "Student Attendance System",
+        "description": "Web-based attendance system with multi-role user management and centralized attendance monitoring.",
+        "longDescription": "Built a school attendance system using Laravel with multi-role authentication (admin, teacher, student). Designed the database schema for attendance records and developed input and monitoring features for real-time attendance tracking.",
+        "achievements": [
+          "Built multi-role authentication for admin, teacher, and student.",
+          "Designed database schema for structured attendance records.",
+          "Developed real-time attendance input and monitoring features.",
+          "Implemented role-based access to restrict data per user type."
+        ],
+        "tags": [
+          "Laravel",
+          "MySQL",
+          "Bootstrap",
+          "HTML",
+          "CSS"
+        ],
+        "category": "Full-Stack",
+        "glowColor": "pink",
+        "stars": 0,
+        "forks": 0,
+        "liveUrl": "",
+        "githubUrl": "https://github.com/MuhammadRafa18/Presensi-app",
+        "metrics": {
+          "label": "Role",
+          "value": "Multi-role Auth"
+        }
+      },
+      {
+        "id": "5",
+        "title": "Admin Dashboard E-Commerce",
+        "description": "Centralized admin dashboard for managing products, users, and orders with real-time API integration.",
+        "longDescription": "Developed an admin dashboard using React.js and Tailwind CSS. Integrated backend APIs for real-time CRUD operations on products, user management, and transaction monitoring — all in one centralized system.",
+        "achievements": [
+          "Built centralized CRUD interface for products, users, and orders.",
+          "Integrated backend API for real-time data updates across views.",
+          "Managed global state and data flow for admin operations.",
+          "Designed clean dashboard UI with Tailwind CSS component system."
+        ],
+        "tags": [
+          "React.js",
+          "Tailwind CSS",
+          "RESTful API"
+        ],
+        "category": "Frontend",
+        "glowColor": "cyan",
+        "stars": 0,
+        "forks": 0,
+        "liveUrl": "",
+        "githubUrl": "https://github.com/MuhammadRafa18/Admin_E-commerc",
+        "metrics": {
+          "label": "View",
+          "value": "Real-time CRUD"
+        }
+      }
+    ]
   }
 }

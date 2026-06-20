@@ -2,8 +2,11 @@
 import { motion } from 'motion/react';
 import { EXPERIENCES } from '../data';
 import { Briefcase, Calendar, CheckSquare, Layers } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 export default function Experience() {
+   const t = useTranslations("data");
+  
   return (
     <section 
       id="experience" 
@@ -23,7 +26,7 @@ export default function Experience() {
           className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full glass border border-white/5 text-xs font-semibold text-accent-cyan tracking-wider uppercase mb-3"
         >
           <Briefcase className="w-3.5 h-3.5" />
-          <span>Riwayat Karir</span>
+          <span>{t('experience_headline')}</span>
         </motion.div>
 
         <motion.h2
@@ -33,9 +36,9 @@ export default function Experience() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="font-display font-black text-3xl sm:text-4xl md:text-5xl tracking-tight text-white mb-4"
         >
-          Pengalaman{' '}
+          {t('experience_title_normal')}{' '}
           <span className="bg-gradient-to-r from-accent-blue via-accent-cyan to-accent-purple bg-clip-text text-transparent">
-            Kerja & Kontribusi
+            {t('experience_title_gradient')}
           </span>
         </motion.h2>
 
@@ -46,7 +49,7 @@ export default function Experience() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-slate-400 max-w-2xl text-sm sm:text-base"
         >
-          Membantu skalabilitas startup teknologi dengan menyusun sistem yang solid, performant, dan adaptif terhadap perkembangan bisnis.
+          {t('experience_subtitle')}
         </motion.p>
       </div>
 
@@ -98,7 +101,7 @@ export default function Experience() {
                   {/* Bullet description notes */}
                   <ul className="space-y-3 mb-6">
                     {exp.description.map((bullet, bIdx) => (
-                      <li key={bIdx} className="flex gap-2 items-start text-xs text-slate-400 leading-relaxed">
+                      <li key={bIdx} className="flex gap-2 items-start text-xs text-slate-300 leading-relaxed">
                         <CheckSquare className="w-4 h-4 text-accent-blue shrink-0 mt-0.5" />
                         <span>{bullet}</span>
                       </li>

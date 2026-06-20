@@ -14,6 +14,7 @@ interface NavItem {
   id: string;
 }
 
+
 export default function Header({ activeSection }: HeaderProps) {
   const locale = useLocale();
   const router = useRouter();

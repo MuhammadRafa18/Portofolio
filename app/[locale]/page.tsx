@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import { useTranslations } from 'next-intl';
 import Hero from '../components/Hero';
-import BentoShowcase from '../components/BentoShowcase';
 import TechStack from '../components/TechStack';
 import Projects from '../components/Projects';
 import Experience from '../components/Experience';
@@ -62,7 +61,7 @@ export default function Page() {
   };
 
   return (
-    <div className="relative min-h-screen bg-[#050506] text-slate-100 overflow-x-hidden selection:bg-accent-blue/30 selection:text-white">
+    <div className="relative min-h-screen bg-[#121212] text-slate-100 overflow-x-hidden selection:bg-accent-blue/30 selection:text-white">
       {/* Decorative ambient glowing grids */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff02_1px,transparent_1px),linear-gradient(to_bottom,#ffffff02_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none -z-10" />
 
@@ -73,10 +72,8 @@ export default function Page() {
       <main className="relative z-10">
         
         {/* Section 1: Hero view (includes profile & greeting text + active terminal block) */}
-        <Hero onLearnMoreClick={() => setShowServicesDrawer(true)} />
+        <Hero />
 
-        {/* Section 2: Visual Bento stats grid */}
-        <BentoShowcase />
 
         {/* Section 3: Professional Tech Skill modular board */}
         <TechStack />
