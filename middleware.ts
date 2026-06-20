@@ -11,5 +11,5 @@ export default createMiddleware({
 // 2. Tentukan route mana saja yang diproses oleh middleware
 export const config = {
   // Hanya jalankan pada route yang memiliki locale atau root
-  matcher: ['/', '/(en|id)/:path*']
+  matcher: ['/', '/(en|id)/:path*','/((?!api|_next|_vercel|.*\\..*).*)']
 };
