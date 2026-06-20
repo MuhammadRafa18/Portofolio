@@ -112,7 +112,7 @@ export default function Header({ activeSection }: HeaderProps) {
           {/* Social Icons & Status indicator */}
           <div className="flex items-center gap-3">
             <a
-              href="https://github.com"
+              href="https://github.com/MuhammadRafa18"
               target="_blank"
               rel="noreferrer"
               className="p-2 rounded-full glass-light hover:border-glow text-slate-400 hover:text-accent-blue transition-all"
@@ -121,7 +121,7 @@ export default function Header({ activeSection }: HeaderProps) {
               <Github className="w-4 h-4" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/rafa-al-maqdis-99ba72287/"
               target="_blank"
               rel="noreferrer"
               className="p-2 rounded-full glass-light hover:border-glow text-slate-400 hover:text-accent-blue transition-all"
