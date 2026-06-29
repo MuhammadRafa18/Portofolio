@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 const locales = ['en', 'id'] as const;
 
 export default getRequestConfig(async ({ locale }) => {
-  console.log("Locale yang terbaca:", locale);
+  
   const activeLocale = locale && locales.includes(locale as any) ? locale : 'en';
 
   return {

@@ -4,9 +4,6 @@ import { Project, Skill, WorkExperience } from "./types";
 
 
 
-export const SKILLS: Skill[] = [];
-
-export const PROJECTS: Project[] = [];
 
 export const EXPERIENCES: WorkExperience[] = [
   {

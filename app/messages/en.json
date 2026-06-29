@@ -1,9 +1,9 @@
 {
   "Hero": {
-    "badge": "Junior Full-Stack Developer",
-    "title_part1": "Turning Ideas Into",
-    "title_highlight": "Working Web Apps",
-    "subtitle": "Backend-focused developer with hands-on experience building RESTful APIs with Laravel and interactive UIs with React. I'm early in my career, but I write structured code, ship working products, and learn fast.",
+    "badge": "Junior Full-Stack Developer ",
+    "title_part1": "Hi, I'm",
+    "title_highlight": "Muhammad Rafa",
+    "subtitle": "A junior full-stack developer who enjoys building things end-to-end — from database design to UI. I work carefully, pick up new tools fast, and collaborate well whether in a team, solo, or alongside AI tools. Currently focusing on Next.js while shipping real features in a production CRM.",
     "cta_primary": "View My Projects"
   },
   "Navbar": {
@@ -37,6 +37,7 @@
     "skills_headline": "Expertise & Core Engine",
     "skills_title": "The Technology I",
     "skills_subtitle": "Use & Master",
+    "skills_description": "A practical set of tools I use to build and ship web applications — from backend APIs to frontend interfaces.",
     "experience_headline": "Track Record",
     "experience_title_normal": "Career",
     "experience_title_gradient": "Journey & Contributions",
@@ -125,11 +126,33 @@
         "metrics": {
           "label": "Stack",
           "value": "React + API"
-        }
+        },
+        "mockupImages": [
+          {
+            "src": "/e-commerc/login.png",
+            "label": "Page Login"
+          },
+          {
+            "src": "/e-commerc/katalog.png",
+            "label": "Page Katalog"
+          },
+          {
+            "src": "/e-commerc/produk_page.png",
+            "label": "Page Product"
+          },
+          {
+            "src": "/e-commerc/order.png",
+            "label": "Page Order"
+          },
+          {
+            "src": "/e-commerc/setting.png",
+            "label": "Page Setting"
+          }
+        ]
       },
       {
         "id": "2",
-        "title": "Company Profile Backend API",
+        "title": "Company Profile PT Inspirasi Solusi Kreatif",
         "description": "RESTful API for dynamic content management of a company profile website with role-based authentication.",
         "longDescription": "Developed a RESTful API using Laravel 12 to support a company profile website with an admin panel. Designed a relational database structure, implemented authentication and role-based access control, and ensured full integration with the frontend team.",
         "achievements": [
@@ -148,15 +171,21 @@
         "glowColor": "purple",
         "stars": 0,
         "forks": 0,
-        "liveUrl": "",
+        "liveUrl": "https://sorekreatif.id",
         "metrics": {
           "label": "Auth",
           "value": "RBAC + Middleware"
-        }
+        },
+        "mockupImages": [
+          {
+            "src": "/company-profile/logins.png",
+            "label": "Page Login Dashboard Admin"
+          }
+        ]
       },
       {
         "id": "3",
-        "title": "E-Commerce Backend API",
+        "title": "E-Commerce Backend ",
         "description": "Full-cycle e-commerce RESTful API covering product management, user auth, and payment integration.",
         "longDescription": "Built an e-commerce backend using Laravel with a relational database for products, users, and transactions. Handled data validation, user authentication, order management, and payment integration through API endpoints.",
         "achievements": [
@@ -208,7 +237,29 @@
         "metrics": {
           "label": "Role",
           "value": "Multi-role Auth"
-        }
+        },
+        "mockupImages": [
+          {
+            "src": "/presensi-app/login.png",
+            "label": "Page Login"
+          },
+          {
+            "src": "/presensi-app/dashboards.png",
+            "label": "Page Dashboard"
+          },
+          {
+            "src": "/presensi-app/prensesi.png",
+            "label": "Page Presensi"
+          },
+          {
+            "src": "/presensi-app/tables.png",
+            "label": "Page Table Presensi"
+          },
+          {
+            "src": "/presensi-app/print.png",
+            "label": "Page Pirnt Report"
+          }
+        ]
       },
       {
         "id": "5",
@@ -237,6 +288,101 @@
           "value": "Real-time CRUD"
         }
       }
+    ],
+    "experiences": [
+      {
+        "id": "exp-1",
+        "role": "Full-Stack Web Developer Intern",
+        "company": "PT Sinergi Wahana Gemilang",
+        "duration": "May 2026 - Present",
+        "description": [
+          "Built and maintained features across a Ruby on Rails CRM system covering leads, quotations, products, and course management modules.",
+          "Implemented dynamic admin UI using Hotwire (Turbo + Stimulus) — including auto-slug generation, live duplicate checking with debounce, and multi-select principal assignment.",
+          "Developed PDF quotation generation with Prawn supporting two distinct templates (New License and Renewal) with dynamic data mapping.",
+          "Migrated hardcoded Rails enums to a Picklist-driven system with cascade-on-rename, delete protection, and admin-only authorization via Pundit.",
+          "Extended lead import/export service with bulk principal assignment, server-side access validation, and primary contact column mapping.",
+          "Designed relational database structures and wrote scoped queries with eager loading to prevent N+1 issues across multiple modules."
+        ],
+        "tags": [
+          "Ruby on Rails",
+          "PostgreSQL",
+          "Hotwire",
+          "Stimulus",
+          "Turbo",
+          "Pundit",
+          "Prawn",
+          "TailwindCSS",
+          "WSL Ubuntu"
+        ],
+        "glowAccent": "border-l-emerald-500 shadow-emerald-500/10"
+      },
+      {
+        "id": "exp-2",
+        "role": "Backend / Web Developer Intern",
+        "company": "PT Inspirasi Solusi Kreatif",
+        "duration": "December 2025 - February 2026",
+        "description": [
+          "Developed RESTful APIs using Laravel to support a website system with an admin panel.",
+          "Designed relational database structures and data flows for dynamic content management.",
+          "Implemented authentication and role-based access control using Laravel middleware.",
+          "Managed data validation, error handling, API testing, and frontend team integration."
+        ],
+        "tags": [
+          "Laravel",
+          "PHP",
+          "MySQL",
+          "RESTful API",
+          "RBAC"
+        ],
+        "glowAccent": "border-l-violet-500 shadow-violet-500/10"
+      },
+      {
+        "id": "exp-3",
+        "role": "Web Developer Intern",
+        "company": "PT Len Telekomunikasi Indonesia",
+        "duration": "January 2023 - March 2023",
+        "description": [
+          "Developed a company profile website using Laravel and MySQL.",
+          "Built a backend-driven content management system for admin use.",
+          "Designed UI prototypes in Figma as the foundation for frontend implementation."
+        ],
+        "tags": [
+          "Laravel",
+          "MySQL",
+          "Figma",
+          "HTML",
+          "CSS"
+        ],
+        "glowAccent": "border-l-blue-500 shadow-blue-500/10"
+      }
     ]
+  },
+  "contact": {
+    "badge": "Get In Touch",
+    "title_part1": "Let's Build",
+    "title_highlight": "Something Together",
+    "subtitle": "Open to freelance projects, full-time full-stack roles, or just a good conversation about web development. Send me a message and I'll get back to you within 24 hours.",
+    "email_label": "Email",
+    "location_label": "Location & Timezone",
+    "location_value": "Depok, Indonesia (GMT+7)",
+    "form_title": "Send a Message",
+    "field_name": "Full Name",
+    "field_name_placeholder": "e.g. John Doe",
+    "field_email": "Email Address",
+    "field_email_placeholder": "e.g. john@domain.com",
+    "field_subject": "Subject",
+    "subject_options": [
+      "Freelance Project (Web / Full-Stack)",
+      "Job Opportunity",
+      "Collaboration or Partnership",
+      "Just Saying Hi"
+    ],
+    "field_message": "Message",
+    "field_message_placeholder": "Tell me about your project, idea, or opportunity...",
+    "btn_send": "Send Message",
+    "btn_sending": "Sending...",
+    "success_title": "Message Sent!",
+    "success_desc": "Thanks for reaching out. I'll read your message and reply to your email as soon as possible.",
+    "success_close": "Close"
   }
 }

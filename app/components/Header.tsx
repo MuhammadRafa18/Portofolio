@@ -132,16 +132,6 @@ export default function Header({ activeSection }: HeaderProps) {
 
             {/* Availability Widget */}
             <div className="relative group/badge">
-              <div className="flex items-center gap-2 px-3 py-1.5 rounded-full glass border border-emerald-500/10 hover:border-emerald-500/30 transition-all cursor-pointer">
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-                </span>
-                <span className="text-[10px] font-bold text-emerald-400 tracking-wider uppercase">
-                  Open Work
-                </span>
-              </div>
-
               {/* Mini detail tooltip */}
               <div className="absolute right-0 top-12 w-48 p-3 rounded-lg glass border border-emerald-500/20 shadow-xl opacity-0 translate-y-2 pointer-events-none group-hover/badge:opacity-100 group-hover/badge:translate-y-0 group-hover/badge:pointer-events-auto transition-all duration-300 z-50 text-left">
                 <p className="text-[10px] text-slate-400 mb-1">

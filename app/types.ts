@@ -12,6 +12,10 @@ export interface Project {
   liveUrl?: string;
   githubUrl?: string;
   metrics?: { label: string; value: string };
+   mockupImages?: {   
+    src: string;
+    label: string;
+  }[];
 }
 
 export interface Skill {

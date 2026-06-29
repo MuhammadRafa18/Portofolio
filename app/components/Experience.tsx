@@ -1,11 +1,12 @@
 "use client";
 import { motion } from 'motion/react';
-import { EXPERIENCES } from '../data';
+import { WorkExperience } from '../types';
 import { Briefcase, Calendar, CheckSquare, Layers } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 export default function Experience() {
    const t = useTranslations("data");
+  const EXPERIENCES = t.raw("experiences") as WorkExperience[];
   
   return (
     <section 

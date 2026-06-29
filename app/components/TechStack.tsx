@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Skill } from "../types";
 import * as Icons from "lucide-react";
@@ -9,6 +9,8 @@ export default function TechStack() {
   const t = useTranslations("data");
   const skills = t.raw("skills") as Skill[];
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
+   const [showAll, setShowAll] = useState(false);
+    const INITIAL_COUNT = 6;
 
   const categories = ["All", "Languages", "Frontend", "Backend"];
 
@@ -17,7 +19,12 @@ export default function TechStack() {
       ? skills
       : skills.filter((skill) => skill.category === selectedCategory);
 
-  // Helper dynamically fetches icon from Lucide-react
+   const visibleSkils = useMemo(() => {
+     return showAll
+       ? filteredSkills
+       : filteredSkills.slice(0, INITIAL_COUNT);
+   }, [filteredSkills, showAll]);
+
   const renderIcon = (iconName: string) => {
     const IconComponent = (Icons as any)[iconName];
     if (IconComponent) {
@@ -68,8 +75,7 @@ export default function TechStack() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-slate-400 max-w-2xl text-sm sm:text-base"
         >
-          Menggunakan toolkit modern yang berorientasi pada kecepatan,
-          skalabilitas ekstrem, dan kepatuhan terhadap clean code practices.
+         {t('skills_description')}
         </motion.p>
       </div>
 
@@ -84,7 +90,7 @@ export default function TechStack() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.05 }}
-              onClick={() => setSelectedCategory(cat)}
+              onClick={() => {setSelectedCategory(cat); setShowAll(false)}}
               className={`relative px-4 py-2 rounded-full font-display text-xs font-semibold tracking-wide transition-all cursor-pointer ${
                 isSelected
                   ? "text-white"
@@ -110,7 +116,7 @@ export default function TechStack() {
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
       >
         <AnimatePresence mode="popLayout">
-          {filteredSkills.map((skill, index) => (
+          {visibleSkils.map((skill, index) => (
             <motion.div
               layout
               initial={{ opacity: 0, scale: 0.95, y: 15 }}
@@ -168,6 +174,34 @@ export default function TechStack() {
           ))}
         </AnimatePresence>
       </motion.div>
+         {filteredSkills.length > INITIAL_COUNT && (
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="flex justify-center mt-10"
+        >
+          <button
+            onClick={() => setShowAll((prev) => !prev)}
+            className="flex items-center gap-2 px-5 py-2.5 rounded-xl glass border border-white/10 text-sm font-semibold text-slate-400 hover:text-white hover:border-white/20 transition-all cursor-pointer"
+          >
+            {showAll ? (
+              <>
+                <Icons.ChevronUp className="w-4 h-4" />
+                <span>Tampilkan Lebih Sedikit</span>
+              </>
+            ) : (
+              <>
+                <Icons.ChevronDown className="w-4 h-4" />
+                <span>
+                  Tampilkan Semua ({filteredSkills.length - INITIAL_COUNT}{" "}
+                  lainnya)
+                </span>
+              </>
+            )}
+          </button>
+        </motion.div>
+      )}
+
     </section>
   );
 }

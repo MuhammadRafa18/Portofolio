@@ -1,9 +1,9 @@
 {
   "Hero": {
-    "badge": "Junior Full-Stack Developer",
-    "title_part1": "Mengubah Ide Menjadi",
-    "title_highlight": "Aplikasi Web yang Nyata",
-    "subtitle": "Developer backend dengan pengalaman nyata membangun RESTful API menggunakan Laravel dan antarmuka interaktif dengan React. Masih awal karir, tapi saya menulis kode yang terstruktur, menghasilkan produk yang berjalan, dan terus belajar cepat.",
+    "badge": "Junior Full-Stack Developer ",
+    "title_part1": "Halo, Saya",
+    "title_highlight": "Muhammad Rafa",
+    "subtitle": "Junior full-stack developer yang senang membangun sesuatu dari awal sampai selesai — dari desain database hingga tampilan UI. Saya bekerja dengan teliti, cepat beradaptasi dengan teknologi baru, dan bisa berkolaborasi baik dalam tim, mandiri, maupun bersama AI tools. Saat ini fokus mendalami Next.js sambil mengerjakan fitur nyata di sistem CRM production.",
     "cta_primary": "Lihat Proyek Saya"
   },
   "Navbar": {
@@ -37,6 +37,7 @@
     "skills_headline": "Keahlian & Core Engine",
     "skills_title": "Teknologi Yang Saya ",
     "skills_subtitle": "Gunakan & Kuasai",
+    "skills_description": "Kumpulan tools yang saya gunakan untuk membangun aplikasi web — dari backend API hingga antarmuka frontend.",
     "experience_headline": "Riwayat Karir",
     "experience_title_normal": "Pengalaman",
     "experience_title_gradient": "Kerja & Kontribusi",
@@ -129,7 +130,7 @@
       },
       {
         "id": "2",
-        "title": "Company Profile Backend API",
+        "title": "Company Profile PT Inspirasi Solusi Kreatif",
         "description": "RESTful API untuk pengelolaan konten dinamis website company profile dengan sistem autentikasi berbasis role.",
         "longDescription": "Membangun RESTful API menggunakan Laravel 12 untuk mendukung website company profile dengan admin panel. Merancang struktur database relasional, menerapkan autentikasi, role-based access control, serta memastikan integrasi penuh dengan tim frontend.",
         "achievements": [
@@ -148,15 +149,21 @@
         "glowColor": "purple",
         "stars": 0,
         "forks": 0,
-        "liveUrl": "",
+        "liveUrl": "https://sorekreatif.id",
         "metrics": {
           "label": "Auth",
           "value": "RBAC + Middleware"
-        }
+        },
+        "mockupImages": [
+          {
+            "src": "/company-profile/login.png",
+            "label": "Page Login Dashboard Admin"
+          }
+        ]
       },
       {
         "id": "3",
-        "title": "E-Commerce Backend API",
+        "title": "E-Commerce Backend ",
         "description": "RESTful API sistem e-commerce dengan alur transaksi lengkap — dari manajemen produk hingga integrasi pembayaran.",
         "longDescription": "Mengembangkan backend e-commerce menggunakan Laravel dengan database relasional untuk produk, pengguna, dan transaksi. Mengelola validasi data, autentikasi pengguna, pengelolaan order, dan integrasi pembayaran melalui API.",
         "achievements": [
@@ -208,7 +215,29 @@
         "metrics": {
           "label": "Role",
           "value": "Multi-role Auth"
-        }
+        },
+        "mockupImages": [
+          {
+            "src": "/presensi-app/login.png",
+            "label": "Page Login"
+          },
+          {
+            "src": "/presensi-app/dashboards.png",
+            "label": "Page Dashboard"
+          },
+          {
+            "src": "/presensi-app/prensesi.png",
+            "label": "Page Presensi"
+          },
+          {
+            "src": "/presensi-app/tables.png",
+            "label": "Page Table Presensi"
+          },
+          {
+            "src": "/presensi-app/print.png",
+            "label": "Page Pirnt Report"
+          }
+        ]
       },
       {
         "id": "5",
@@ -237,6 +266,101 @@
           "value": "Real-time CRUD"
         }
       }
+    ],
+    "experiences": [
+      {
+        "id": "exp-1",
+        "role": "Full-Stack Web Developer Intern",
+        "company": "PT Sinergi Wahana Gemilang",
+        "duration": "Mei 2026 - Sekarang",
+        "description": [
+          "Membangun dan memelihara fitur pada sistem CRM berbasis Ruby on Rails yang mencakup modul leads, quotation, produk, dan manajemen kursus.",
+          "Mengimplementasikan UI admin dinamis menggunakan Hotwire (Turbo + Stimulus) — termasuk auto-slug generation, live duplicate check dengan debounce, dan multi-select assignment principal.",
+          "Mengembangkan fitur generate PDF quotation menggunakan Prawn dengan dua template berbeda (New License dan Renewal) beserta mapping data dinamis.",
+          "Migrasi Rails enum yang hardcoded ke sistem Picklist dinamis dengan cascade-on-rename, proteksi hapus, dan otorisasi berbasis Pundit.",
+          "Mengembangkan fitur import/export leads dengan bulk principal assignment, validasi akses sisi server, dan mapping kolom kontak utama.",
+          "Merancang struktur database relasional dan menulis scoped query dengan eager loading untuk mencegah masalah N+1 di berbagai modul."
+        ],
+        "tags": [
+          "Ruby on Rails",
+          "PostgreSQL",
+          "Hotwire",
+          "Stimulus",
+          "Turbo",
+          "Pundit",
+          "Prawn",
+          "TailwindCSS",
+          "WSL Ubuntu"
+        ],
+        "glowAccent": "border-l-emerald-500 shadow-emerald-500/10"
+      },
+      {
+        "id": "exp-2",
+        "role": "Backend / Web Developer Intern",
+        "company": "PT Inspirasi Solusi Kreatif",
+        "duration": "Desember 2025 - Februari 2026",
+        "description": [
+          "Mengembangkan RESTful API menggunakan Laravel untuk mendukung sistem website dengan admin panel.",
+          "Merancang struktur database relasional dan alur data untuk pengelolaan konten dinamis.",
+          "Menerapkan autentikasi dan role-based access control menggunakan middleware Laravel.",
+          "Mengelola validasi, error handling, serta melakukan pengujian API dan integrasi dengan tim frontend."
+        ],
+        "tags": [
+          "Laravel",
+          "PHP",
+          "MySQL",
+          "RESTful API",
+          "RBAC"
+        ],
+        "glowAccent": "border-l-violet-500 shadow-violet-500/10"
+      },
+      {
+        "id": "exp-3",
+        "role": "Web Developer Intern (PKL)",
+        "company": "PT Len Telekomunikasi Indonesia",
+        "duration": "Januari 2023 - Maret 2023",
+        "description": [
+          "Mengembangkan website company profile menggunakan Laravel dan MySQL.",
+          "Membangun sistem pengelolaan konten berbasis backend untuk kebutuhan admin.",
+          "Mendesain prototype UI menggunakan Figma sebagai dasar implementasi frontend."
+        ],
+        "tags": [
+          "Laravel",
+          "MySQL",
+          "Figma",
+          "HTML",
+          "CSS"
+        ],
+        "glowAccent": "border-l-blue-500 shadow-blue-500/10"
+      }
     ]
+  },
+  "contact": {
+    "badge": "Hubungi Saya",
+    "title_part1": "Mari Kita Buat",
+    "title_highlight": "Sesuatu Bersama",
+    "subtitle": "Terbuka untuk proyek freelance, posisi full-time full-stack, atau sekadar ngobrol soal web development. Kirim pesan dan saya akan membalas dalam 24 jam.",
+    "email_label": "Email",
+    "location_label": "Lokasi & Zona Waktu",
+    "location_value": "Depok, Indonesia (GMT+7)",
+    "form_title": "Kirim Pesan",
+    "field_name": "Nama Lengkap",
+    "field_name_placeholder": "Contoh: Budi Santoso",
+    "field_email": "Alamat Email",
+    "field_email_placeholder": "Contoh: budi@domain.com",
+    "field_subject": "Subjek",
+    "subject_options": [
+      "Proyek Freelance (Web / Full-Stack)",
+      "Tawaran Pekerjaan",
+      "Kolaborasi atau Kemitraan",
+      "Sekadar Menyapa"
+    ],
+    "field_message": "Pesan",
+    "field_message_placeholder": "Ceritakan proyek, ide, atau peluang yang ingin kamu diskusikan...",
+    "btn_send": "Kirim Pesan",
+    "btn_sending": "Mengirim...",
+    "success_title": "Pesan Terkirim!",
+    "success_desc": "Terima kasih sudah menghubungi. Saya akan membaca dan membalas ke email kamu sesegera mungkin.",
+    "success_close": "Tutup"
   }
 }
